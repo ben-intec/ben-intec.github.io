@@ -1728,7 +1728,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: var(--accent-color);
 			top: 1px;
 		}
 
