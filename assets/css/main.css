@@ -299,7 +299,7 @@ footer > p {
     }
 
     #nav .logo-text {
-        display: none;
+        /*display: none;*/
     }
 }
 
@@ -2227,7 +2227,7 @@ body > article {
 }
 
 #top .image img {
-    border-radius: 100%;
+    /*border-radius: 100%;*/
 }
 
 #top h1 {
