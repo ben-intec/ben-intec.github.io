@@ -1719,7 +1719,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: #d1a056;
 			color: #fff !important;
 		}
 
