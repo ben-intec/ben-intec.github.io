@@ -1708,7 +1708,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: var(--accent-color);
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -2035,7 +2035,7 @@ input, select, textarea {
 
 		.wrapper.style4 {
 			background-color: #262728;
-			color: #999;
+			color: var(--secundary-color);
 			/*text-shadow: -1px -1px 0px #181818;*/
 		}
 
@@ -2059,7 +2059,18 @@ input, select, textarea {
 				}
 
 /* Nav */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: gray;
+	opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: gray;
+}
 	#nav {
 		background-color: #282828;
 		text-align: center;
