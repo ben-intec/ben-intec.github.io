@@ -161,7 +161,25 @@
             <div class="numbertext">5 / 7</div>
             <div class="code-block">
                 <h4><span>Human Languages</span> {</h4>
-                <div class="image-block"><img src="images/languages.png" alt="language skills"></div>
+<!--                <div class="image-block"><img src="images/languages.png" alt="language skills"></div>-->
+                <table class="language-table">
+                    <tr>
+                        <td><label for="file">Nederlands</label></td>
+                        <td><progress id="file" value="100" max="100"> </progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file">English</label></td>
+                        <td><progress id="file" value="88" max="100"> </progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file">Français</label></td>
+                        <td><progress id="file" value="68" max="100"> </progress></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file">Deutsch</label></td>
+                        <td><progress id="file" value="18" max="100"> </progress></td>
+                    </tr>
+                </table>
                 <h4>}</h4>
             </div>
         </div>
@@ -367,6 +385,35 @@
         padding-left: 2em;
         font-size: 1.1em;
         font-weight: 300;
+    }
+
+    progress{
+        color: var(--accent-color);
+        background: var(--primary-color);
+    }
+
+
+    progress::-webkit-progress-value {
+        background: var(--accent-color);
+    }
+
+    progress::-moz-progress-bar {
+        background: var(--accent-color);
+    }
+
+    progress::-webkit-progress-value {
+        background: var(--accent-color);
+    }
+
+    progress::-webkit-progress-bar {
+        background: var(--accent-color);
+    }
+
+    div.code-block table{
+        margin-left: 6em;
+        font-size: 1.1em;
+        font-weight: 300;
+        width: 60%;
     }
 
     div.image-block {
