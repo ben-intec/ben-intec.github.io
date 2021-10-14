@@ -98,14 +98,14 @@
     </div>
 </article>
 
-<!-- Portfolio -->
+<!-- Skills -->
 <article id="portfolio" class="wrapper style3">
     <div class="slideshow-container">
 
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <div class="mySlides fade" >
-        <div class="numbertext">1 / 3</div>
+        <div class="numbertext">1 / 7</div>
         <div class="code-block">
             <h4><span>Profile</span> {</h4>
             <p><code>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
+        <div class="numbertext">2 / 7</div>
         <div class="code-block">
             <h4><span>Developer Skills</span> {</h4>
             <p><code>
@@ -129,7 +129,7 @@
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
+        <div class="numbertext">3 / 7</div>
         <div class="code-block">
             <h4><span>Java Skills</span> {</h4>
             <p><code>
@@ -138,6 +138,49 @@
             <h4>}</h4>
         </div>
     </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <div class="code-block">
+            <h4><span>Computer Languages</span> {</h4>
+            <p><code>
+                Jave, C#, kotlin, js, bash, XML, SQL, HTML, css;
+            </code></p>
+            <h4>}</h4>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <div class="code-block">
+            <h4><span>Human Languages</span> {</h4>
+            <div class="image-block"><img src="images/languages.png" alt="language skills"></div>
+            <h4>}</h4>
+        </div>
+    </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <div class="code-block">
+                <h4><span>Other Skills</span> {</h4>
+                <p><code>
+                    Photoshop, Gimp, various Office suits, linux user;
+                </code></p>
+                <h4>}</h4>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <div class="code-block">
+                <h4><span>History</span> {</h4>
+                <div
+                        class="image-block"><img src="images/timelinewhite.png" width="50%" height="auto"
+                                               alt="timeline"></div>
+                <h4>}</h4>
+            </div>
+        </div>
+
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
@@ -147,6 +190,10 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
     </div>
     <script src="assets/js/slides.js">
 
@@ -293,11 +340,14 @@
     div.code-block span{
         color: var(--accent-color)
     }
-
     div.code-block p {
         padding-left: 2em;
         font-size: 1.1em;
         font-weight: 300;
+    }
+
+    div.image-block {
+        text-align: center;
     }
 
     /* The dots/bullets/indicators */
