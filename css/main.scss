@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: #232425;
+  --secundary-color: #202122;
+  --accent-color: #e78d05;
+  --light-color: #eeeeee;
+  --light-color-fade: #eeeeee77;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html, body, div, article, section, table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Montserrat', system-ui;
+  font-weight: 200;
+  font-size: 100%;
+  vertical-align: center;
+}
+
+a {
+  color: var(--light-color-fade);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: var(--primary-color);
+  color: white;
+  max-width: 100%;
+}
+
+article {
+  padding: 1.8em;
+  text-align: center;
+}
+
+//NAVIGATION
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main-body {
+  padding-top: 102px;
+}
+
+header.navbar {
+  background: var(--light-color);
+  margin: 0;
+  border-bottom: 1px solid var(--accent-color);
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-img {
+    width: 2em;
+    height: 2em;;
+    content: url('../images/logo.svg');
+
+    &:hover {
+      content: url('../images/logorev.svg');
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container-header {
+    margin: 0;
+    padding: 0 1em;
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+
+
+  nav.menu-btn {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 999;
+    width: 46%;
+    right: 0;
+    top: 0;
+    background: var(--primary-color);
+    height: 100vh;
+    padding: 1em;
+
+    ul {
+      margin-top: 5em;
+    }
+
+    li {
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: .5em;
+        font-size: 1.3em;
+        text-align: right;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+  }
+}
+
+//INTRO SECTION
+#intro {
+  text-align: center;
+  margin-bottom: 3em;
+
+  h1 {
+    color: var(--light-color-fade);
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding-bottom: .2em;
+
+    strong {
+      color: var(--accent-color);
+      font-weight: 500;
+    }
+  }
+
+  .image-col {
+    margin-bottom: -5em;
+
+    img {
+      height: 10em;
+      width: 10em;
+      background: var(--secundary-color);
+      border-radius: 100%;
+      padding: 1em;
+    }
+  }
+
+  .text-col {
+    padding: 4em 2em 2em 2em;
+    background: var(--secundary-color);
+    text-align: left;
+    border-radius: 2em;
+
+    p {
+      font-size: 1.1rem;
+
+      strong {
+        color: var(--accent-color);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+//TOOLS SECTION
+#tools {
+  text-align: center;
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .tool-box {
+    display: grid;
+    padding: 1.2em;
+    grid-gap: 1.2em;
+    max-width: 100%;
+
+    .tool-frame {
+      text-align: center;
+      background: var(--secundary-color);
+      margin: 0 auto;
+      border-radius: 1.2em;
+
+
+      img {
+        height: 6em;
+        width: auto;
+        padding: 1em;
+        border-radius: 100%;
+        margin: 0 1em 2em 1em;
+        background: var(--primary-color);
+      }
+
+      h3 {
+        color: var(--accent-color);
+        font-weight: 500;
+      }
+
+      p {
+        color: var(--light-color-fade)
+      }
+    }
+  }
+}
+
+//LANGUAGE SECTION
+#languages {
+  text-align: center;
+  padding: 1.2em;
+
+  h2 {
+    margin-top: 4em;
+  }
+
+  img.lingo {
+    height: 12em;
+    width: auto;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  #java-logo {
+    height: 18em;
+    width: auto;
+  }
+
+  table.language-table {
+    text-align: left;
+    margin: 0 auto 3em auto;
+    font-size: 1.1em;
+    font-weight: 300;
+    max-width: 400px;
+
+    label {
+      color: var(--accent-color);
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+
+    progress {
+      margin-left: 1em;
+      //color: white;
+      background: var(--secundary-color);
+      border-radius: .5em;
+
+      //-webkit-appearance: none;
+    }
+
+
+    progress::-webkit-progress-value {
+      background: var(--secundary-color);
+      border-radius: .5em;
+    }
+
+    progress::-moz-progress-bar {
+      background: white;
+      border-radius: .5em;
+    }
+
+    progress::-webkit-progress-value {
+      background: white;
+      border-radius: .5em;
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--secundary-color);
+      border-radius: .5em;
+    }
+  }
+
+}
+
+//HISTORY
+#history {
+  img {
+    max-width: 640px;
+  }
+}
+
+
+// MEDIUM
+@media only screen and (min-width: 728px) {
+  header.navbar {
+    margin: 0;
+
+    .mobile-menu, .mobile-menu-exit {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: none;
+      position: relative;
+      height: auto;
+      width: 100%;
+      padding: 0;
+
+      ul {
+        margin: 0.4em 0 0.4em -3em;
+      }
+
+
+      li {
+        float: left;
+      }
+
+      li a {
+        color: black;
+        font-size: 1em;
+        font-weight: 500;
+        padding: .1em 1em;
+
+        &:hover {
+          color: var(--accent-color);
+          font-weight: 500;
+        }
+      }
+
+      #current a {
+        font-weight: bold;
+        color: var(--accent-color);
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  //INTRO
+  #intro {
+    .image-col {
+      margin-bottom: -8em;
+
+      img {
+        height: 14em;
+        width: 14em;
+      }
+    }
+
+    .text-col {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  //TOOLS SECTION
+  #tools {
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    .tool-box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+//MEDIUM-LARGE
+@media only screen and (min-width: 960px) {
+  //NAV
+  header.navbar {
+    .logo-img {
+      display: none;
+    }
+
+    .logo-text {
+      display: flex;
+      text-decoration: none;
+      font-family: 'Inconsolata', system-ui;
+      font-weight: 300;
+      font-size: 2.2em;
+      margin-right: 5em;
+      color: black;
+
+      span {
+        color: var(--accent-color);
+      }
+
+      &:hover {
+        color: var(--accent-color);
+
+        span {
+          color: black;
+        }
+      }
+    }
+
+    nav ul {
+      margin: .4em 0 .4em -22em;
+    }
+
+  }
+
+  //TOOLS SECTION
+  #tools .tool-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//LARGE
+@media only screen and (min-width: 1080px) {
+
+  #intro {
+    display: grid;
+    padding: 3em;
+
+    .container {
+      display: flex;
+      background: var(--secundary-color);
+      border-radius: 2em;
+      padding: 4em 2em;
+
+      margin: 0 auto;
+      max-width: 90%;
+    }
+
+    .image-col {
+      margin: 0;
+      padding: 0;
+
+      img {
+        height: 20em;
+        width: 20em;
+        background: none;
+        //border-radius: 100%;
+        padding: 1em;
+        vertical-align: center;
+      }
+    }
+
+    .text-col {
+      padding: 2em 2em 2em 2em;
+      background: var(--secundary-color);
+      text-align: left;
+      border-radius: 2em;
+
+
+      //h1 {
+      //  font-size: 2.2rem;
+      //}
+      //
+      //p {
+      //  font-size: 2rem;
+      //}
+    }
+  }
+
+}
+
+//X-LARGE
+@media only screen and (min-width: 1280px) {
+
+  #intro {
+
+    .image-col {
+      margin: 0;
+      padding: 0;
+
+      img {
+        padding: 0;
+        width: 30em;
+        height: auto;
+      }
+    }
+
+    .text-col {
+      padding: 0;
+
+      h1 {
+        font-size: 2.7rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+
+  //TOOLS SECTION
+  #tools .tool-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+//XX-LARGE
+@media only screen and (min-width: 1680px) {
+
+  #intro .container {
+    max-width: 1400px;
+  }
+}

@@ -1,471 +1,192 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bacdesmedt</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-</head>
-<body class="is-preload">
+    <link rel="shortcut icon" type="image/png" href="images/logo.svg"/>
+    <link rel="stylesheet" href="css/main.css">
 
-<!-- Nav -->
-<nav id="nav">
-    <div>
-        <div class="logodiv">
-            <a class="logo-text" href="#"><span>bac</span>desmedt</a>
-<!--            <a class="logo-fulltext" href="#"><span>ben</span>jamin desmedt</a>-->
-            <a class="logo-img" href="#"><img src="images/logo.svg" alt="logo"></a>
+</head>
+<body class="main-body">
+
+<header id="nav-header" class="navbar">
+    <div class="container-header">
+        <a class="logo-text" href="#intro"><span>bac</span>desmedt</a>
+        <a class="logo-img" href="#intro"><img src="" alt="logo"></a>
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+            <ul>
+<!--                <li><a href="#intro">Top</a></li>-->
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#languages">Lingo</a></li>
+                <li><a href="#history">Timeline</a></li>
+                <li><a href="#software">General</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/mobile-nav.js"></script>
+</header>
+<article id="intro">
+    <div class="container">
+        <div class="image-col">
+            <img src="images/face.png" alt="man's face"/>
         </div>
-        <ul class="container">
-            <li><a href="#top">Top</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#portfolio">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="text-col">
+            <p>
+            <h1>Hi. I'm <strong>Ben</strong>.</h1>
+            </p>
+            <p>A creative problem solver with an affinity for algorithmic thinking. Now a starting
+                <strong>Java Developer</strong>, who’s looking to turn a passion in to a career.
+                Although I have some prior experience as an android developer, I mostly did so in C# and a little in
+                kotlin
+                and java as well. Now I'm focussing on Java with an emphasis on backend development, but I have an
+                interest
+                in front-end as well and aim to grow to a fullstack developer.<br>
+                Eager to learn and a quick study, this <i>young</i> developer offers maturity,
+                reliability
+                and precision.<br>
+                Feel free to look around my website and don’t hesitate to <a href="#contact">contact
+                </a> me with interesting opportunities.
+                <!--							<a href="#work" class="button large scrolly">Learn about what I do</a>-->
+        </div>
+    </div>
+</article>
+
+
+<article id="tools">
+    <header>
+        <h2>Tool kit</h2>
+        <p>An overview of some of the tools in my skill set. I feel comfortable working with these and I'm confident
+            I can familiarize myself quickly with analogous tools.</p>
+    </header>
+    <div class="tool-box">
+        <article class="tool-frame">
+            <span><img src="images/spring.png" alt="spring logo"></span>
+            <h3>Spring (Coming Soon) </h3>
+            <p>Next I'll tackle Spring Rest API. I'm looking forward to adding that to my skill set</p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/junit.png" alt="junit logo"></span>
+            <h3>JUnit / TDD</h3>
+            <p>I know how to write and perform tests. Also testing the logic that communicates with a database. I've
+                mostly worked with JUnit 5, but have a cursory knowledge of JUnit 4</p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/hibernate.png" alt="hibernate logo"></span>
+            <h3>Hibernate / JPA</h3>
+            <p>Setting up a database and creating entities and all necessary CRUD operations using Hibernate's
+                implementation of JPA as well as creating custom queries using JPQL</p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/git.png" alt="swing logo"></span>
+            <h3>Version Control</h3>
+            <p>I've worked with git and github and generally use it via the command line. </p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/javathumbsup.png" alt="swing logo"></span>
+            <h3>Java Swing</h3>
+            <p>I've created some basic apps using various layouts. You can find the app on my github page. </p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/mysql.png" alt="mysql logo"></span>
+            <h3>MySQL</h3>
+            <p>Learned SQL and more specifically the MySQL dialect. Can perform CRUD and JOINs, etc.</p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/scrum.png" alt="scrum / agile logo"></span>
+            <h3>Project Management</h3>
+            <p>As an android dev, I've worked in a scrum/agile environment. So I'm familiar with working on a
+                project with those principles in mind </p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/frontend.png" alt="frontend logo"></span>
+            <h3>Front-end development</h3>
+            <p>You are the looking at the result of a cursory look at the how's and wherefores of
+                front-end development. I cannot claim to have mastered it, but I liked it. This was achieved with a
+                combination of html, css and javascript</p>
+        </article>
+        <article class="tool-frame">
+            <span><img src="images/ermahgerd.png" alt="funny face"></span>
+            <h3>And much, much more</h3>
+            <p>Maven, Gradle, Mockito, JDBC, JSON, H2, Android, RegEx, Streams API, ...</p>
+        </article>
+    </div>
+</article>
+
+<article id="languages">
+    <div class="computer-languages">
+        <header>
+            <h2>Computer Languages</h2>
+            <p>Beep boop beep. Some Computer Languages I'm comfortable with. Obvious Java is my principal lingo. I
+                dabbled with some
+                android apps in kotlin, and as mentioned I've worked in C# before, but it has been a while.</p>
+        </header>
+        <div class="computer-languages-logos">
+            <img src="images/java.png" alt="java logo" class="lingo" id="java-logo">
+            <img src="images/csharp.png" alt="C sharp logo" class="lingo">
+            <img src="images/kotlin.png" alt="kotlin logo" class="lingo">
+            <img src="images/frontend3.png" alt="logos of html, javascript and css" class="lingo">
+        </div>
+        <p>I also have cursory knowledge of objective-C, python and ruby</p>
+    </div>
+    <div class="human-languages">
+        <header>
+            <h2>Human Languages</h2>
+            <p>Yes, I also speak some human languages</p>
+        </header>
+        <table class="language-table">
+            <tr>
+                <td><label for="file">Nederlands</label></td>
+                <td><progress id="file" value="100" max="100"> </progress></td>
+            </tr>
+            <tr>
+                <td><label for="file">English</label></td>
+                <td><progress id="file" value="88" max="100"> </progress></td>
+            </tr>
+            <tr>
+                <td><label for="file">Français</label></td>
+                <td><progress id="file" value="68" max="100"> </progress></td>
+            </tr>
+            <tr>
+                <td><label for="file">Deutsch</label></td>
+                <td><progress id="file" value="18" max="100"> </progress></td>
+            </tr>
+        </table>
+        <p>I can also read some Aurebesh and I can understand Ewoks, depending on the dialect and my blood alohol level
+            .</p>
+    </div>
+</article>
+
+<article id="history">
+    <div class="history-container">
+        <header>
+            <h2>Timeline</h2>
+            <p>An overview of my recent professional and academic endeavours</p>
+        </header>
+        <img src="images/timelinewhite.png" alt="timeline of my career" class="timeline">
+    </div>
+</article>
+<footer>
+    <div class="col-12">
+        <hr/>
+        <h3>Find me on ...</h3>
+        <ul class="social">
+            <li><a href=" www.linkedin.com/in/bacdesmedt" class="icon brands fa-linkedin-in"><span
+                    class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/bacdesmedt" class="icon brands fa-github"><span
+                    class="label">Github</span></a></li>
+            <!--                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
+
+        </ul>
+        <hr/>
+
+        <ul id="copyright">
+            <li>&copy; bacdesmedt. All rights reserved.</li>
         </ul>
     </div>
-</nav>
-
-<!-- Home -->
-<article id="top" class="wrapper style1">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 col-5-large col-12-medium">
-							<span
-                                    class="image fit"><img class="facepic" src="images/face.png"
-                                                           alt="man's face"/></span>
-            </div>
-            <div class="col-8 col-7-large col-12-medium">
-                <header>
-                    <h1>Hi. I'm <strong>Ben</strong>.</h1>
-                </header>
-                <p>A creative problem solver with an affinity for algorithmic thinking. Now a starting
-                    <strong>Java Developer</strong>, who’s looking to turn a passion in to a career.
-                    Although I have some prior experience as an android developer, I mostly did so in C# and a little in
-                    kotlin
-                    and java as well. Now I'm focussing on Java with an emphasis on backend development, but I have an
-                    interest
-                    in front-end as well and aim to grow to a fullstack developer.<br>
-                    Eager to learn and a quick study, this <i>young</i> developer offers maturity,
-                    reliability
-                    and precision.<br>
-                    Feel free to look around my website and don’t hesitate to <a href="#contact">contact
-                    </a> me with interesting opportunities.
-                    <!--							<a href="#work" class="button large scrolly">Learn about what I do</a>-->
-            </div>
-        </div>
-    </div>
-</article>
-
-<!-- Work -->
-<article id="work" class="wrapper style2">
-    <div class="container">
-        <header>
-            <h2>Here's what I'm currently working on</h2>
-            <p>Recent and upcoming endeavours</p>
-        </header>
-        <div class="row aln-center">
-            <div class="col-4 col-6-medium col-12-small">
-                <section class="box style1">
-								<span><img src="images/hibernate.svg" alt="hibernate logo" height="76em"
-                                           width="auto"></span>
-                    <h3>Hibernate / JPA</h3>
-                    <p>A popular implementation of the JPA specifications. A lightweight ORM tool that simplifies the
-                        development of Java applications that interact with a database.</p>
-                </section>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <section class="box style1">
-								<span><img src="images/htmlcss.png" alt="hibernate logo" height="76em"
-                                           width="auto"></span>
-                    <h3>Front-end development</h3>
-                    <p>You are the looking at the result of a cursory look at the how's and wherefores of
-                        front-end development. I cannot claim to have mastered it, but I liked it.</p>
-                </section>
-            </div>
-            <div class="col-4 col-6-medium col-12-small">
-                <section class="box style1">
-								<span><img src="images/spring.png" alt="hibernate logo" height="76em"
-                                           width="auto"></span>
-                    <h3>Spring</h3>
-                    <p>The Spring Framework provides a comprehensive programming and configuration model
-                        for modern Java-based enterprise applications - on any kind of deployment
-                        platform.</p>
-                </section>
-            </div>
-        </div>
-        <!--        <footer>-->
-        <!--            <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>-->
-        <!--            <a href="#portfolio" class="button large scrolly">See some of my recent work</a>-->
-        <!--        </footer>-->
-    </div>
-</article>
-
-<!-- Skills -->
-<article id="portfolio" class="wrapper style3">
-    <div class="slideshow-container">
-
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 7</div>
-            <div class="code-block">
-                <h4><span>Java Skills</span> {</h4>
-                <p><code>
-                    Maven, Gradle, Streams, lambda, Generics, JPA/Hibernate, JDBC, Swing, JUnit;
-                </code></p>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 7</div>
-            <div class="code-block">
-                <h4><span>Toolkit</span> {</h4>
-                <p><code>
-                    Scrum/Agile, git/github, ORM/DBMS, OkHttp, Front/Back end, Data Structures, Recursion
-                </code></p>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 7</div>
-            <div class="code-block">
-                <h4><span>Profile</span> {</h4>
-                <p><code>
-                    Reliable, Intelligent, Eloquent, Eager to learn, Independent, Quick study, Mature, Precise, Problem
-                    solver, Motivated, Consistent;
-                </code></p>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 7</div>
-            <div class="code-block">
-                <h4><span>Computer Languages</span> {</h4>
-                <p><code>
-                    Jave, C#, kotlin, js, bash, XML, SQL, HTML, css;
-                </code></p>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 7</div>
-            <div class="code-block">
-                <h4><span>Human Languages</span> {</h4>
-<!--                <div class="image-block"><img src="images/languages.png" alt="language skills"></div>-->
-                <table class="language-table">
-                    <tr>
-                        <td><label for="file">Nederlands</label></td>
-                        <td><progress id="file" value="100" max="100"> </progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="file">English</label></td>
-                        <td><progress id="file" value="88" max="100"> </progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="file">Français</label></td>
-                        <td><progress id="file" value="68" max="100"> </progress></td>
-                    </tr>
-                    <tr>
-                        <td><label for="file">Deutsch</label></td>
-                        <td><progress id="file" value="18" max="100"> </progress></td>
-                    </tr>
-                </table>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">6 / 7</div>
-            <div class="code-block">
-                <h4><span>Other Skills</span> {</h4>
-                <p><code>
-                    Photoshop, Gimp, various Office suits, linux user;
-                </code></p>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">7 / 7</div>
-            <div class="code-block">
-                <h4><span>History</span> {</h4>
-                <div
-                        class="image-block"><img src="images/timelinewhite.png" width="50%" height="auto"
-                                                 alt="timeline"></div>
-                <h4>}</h4>
-            </div>
-        </div>
-
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-    </div>
-    <script src="assets/js/slides.js">
-
-    </script>
-</article>
-
-<!-- Contact -->
-<article id="contact" class="wrapper style4">
-    <div class="container medium">
-        <header>
-            <h2>Feel free to contact me with any questions</h2>
-            <p>I welcome interesting career opportunities</p>
-        </header>
-        <div class="row">
-            <div class="col-12">
-                <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-small">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
-                        </div>
-                        <div class="col-12">
-                            <input type="text" name="subject" id="subject" placeholder="Subject"/>
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" value="Send Message"/></li>
-                                <li><input type="reset" value="Clear Form" class="alt"/></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-12">
-                <hr/>
-                <h3>Find me on ...</h3>
-                <ul class="social">
-                    <li><a href=" www.linkedin.com/in/bacdesmedt" class="icon brands fa-linkedin-in"><span
-                            class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/bacdesmedt" class="icon brands fa-github"><span
-                            class="label">Github</span></a></li>
-                    <!--                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-
-                </ul>
-                <hr/>
-            </div>
-        </div>
-        <footer>
-            <ul id="copyright">
-                <li>&copy; bacdesmedt. All rights reserved.</li>
-            </ul>
-        </footer>
-    </div>
-</article>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+</footer>
 </body>
-<!-- style for slides -->
-<style>
-    * {
-        box-sizing: border-box
-    }
-
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0
-    }
-
-    .mySlides {
-        display: none
-    }
-
-    img {
-        vertical-align: middle;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-        cursor: pointer;
-        text-decoration: none;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .prev {
-        left: 0;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    div.code-block {
-        text-align: left;
-        font-family: Inconsolata;
-        padding: 5em;
-    }
-
-    div.code-block h4 {
-        font-size: 1.5em;
-        font-weight: 400;
-    }
-
-    div.code-block span {
-        color: var(--accent-color)
-    }
-
-    div.code-block p {
-        padding-left: 2em;
-        font-size: 1.1em;
-        font-weight: 300;
-    }
-
-    progress{
-        color: var(--accent-color);
-        background: var(--primary-color);
-    }
-
-
-    progress::-webkit-progress-value {
-        background: var(--accent-color);
-    }
-
-    progress::-moz-progress-bar {
-        background: var(--accent-color);
-    }
-
-    progress::-webkit-progress-value {
-        background: var(--accent-color);
-    }
-
-    progress::-webkit-progress-bar {
-        background: var(--accent-color);
-    }
-
-    div.code-block table{
-        margin-left: 6em;
-        font-size: 1.1em;
-        font-weight: 300;
-        width: 60%;
-    }
-
-    div.image-block {
-        text-align: center;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next, .text {
-            font-size: 11px
-        }
-    }
-</style>
 </html>
