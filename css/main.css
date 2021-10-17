@@ -245,6 +245,11 @@ header.navbar .mobile-menu-exit {
   max-width: 640px;
 }
 
+#general ul {
+  text-align: left;
+  list-style-type: square;
+}
+
 @media only screen and (min-width: 728px) {
   header.navbar {
     margin: 0;
@@ -305,6 +310,10 @@ header.navbar .mobile-menu-exit {
   #tools .tool-box {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #general ul {
+    margin-left: 8em;
+  }
 }
 @media only screen and (min-width: 960px) {
   header.navbar .logo-img {
@@ -334,6 +343,10 @@ header.navbar .mobile-menu-exit {
 
   #tools .tool-box {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #general ul {
+    margin-left: 16em;
   }
 }
 @media only screen and (min-width: 1080px) {
@@ -390,10 +403,18 @@ header.navbar .mobile-menu-exit {
   #tools .tool-box {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  #general ul {
+    margin-left: 24em;
+  }
 }
 @media only screen and (min-width: 1680px) {
   #intro .container {
     max-width: 1400px;
+  }
+
+  #general ul {
+    margin-left: 48em;
   }
 }
 
