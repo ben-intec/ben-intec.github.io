@@ -221,33 +221,83 @@ header.navbar .mobile-menu-exit {
 }
 #languages table.language-table progress {
   margin-left: 1em;
-  background: var(--secundary-color);
+  background: #111213;
   border-radius: 0.5em;
 }
 #languages table.language-table progress::-webkit-progress-value {
-  background: var(--secundary-color);
+  background: #111213;
   border-radius: 0.5em;
 }
 #languages table.language-table progress::-moz-progress-bar {
-  background: white;
+  background: #cdcdcd;
   border-radius: 0.5em;
 }
 #languages table.language-table progress::-webkit-progress-value {
-  background: white;
+  background: #cdcdcd;
   border-radius: 0.5em;
 }
 #languages table.language-table progress::-webkit-progress-bar {
-  background: var(--secundary-color);
+  background: #111213;
   border-radius: 0.5em;
 }
 
 #history img {
-  max-width: 640px;
+  max-width: 100%;
 }
 
 #general ul {
   text-align: left;
   list-style-type: square;
+  font-size: 1.2em;
+}
+
+#contact .container form {
+  text-align: left;
+}
+#contact .container form label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+#contact .container form input, #contact .container form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+#contact .container form input[type=submit] {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+#socials {
+  text-align: center;
+}
+#socials .social {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.6em;
+}
+#socials .social div {
+  margin: 0 auto;
+}
+#socials img {
+  width: 6em;
+  height: auto;
 }
 
 @media only screen and (min-width: 728px) {
@@ -313,6 +363,10 @@ header.navbar .mobile-menu-exit {
 
   #general ul {
     margin-left: 8em;
+  }
+
+  #history img {
+    max-width: 640px;
   }
 }
 @media only screen and (min-width: 960px) {

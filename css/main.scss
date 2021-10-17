@@ -264,7 +264,7 @@ header.navbar {
     progress {
       margin-left: 1em;
       //color: white;
-      background: var(--secundary-color);
+      background: #111213;
       border-radius: .5em;
 
       //-webkit-appearance: none;
@@ -272,22 +272,22 @@ header.navbar {
 
 
     progress::-webkit-progress-value {
-      background: var(--secundary-color);
+      background: #111213;
       border-radius: .5em;
     }
 
     progress::-moz-progress-bar {
-      background: white;
+      background: #cdcdcd;
       border-radius: .5em;
     }
 
     progress::-webkit-progress-value {
-      background: white;
+      background: #cdcdcd;
       border-radius: .5em;
     }
 
     progress::-webkit-progress-bar {
-      background: var(--secundary-color);
+      background: #111213;
       border-radius: .5em;
     }
   }
@@ -297,7 +297,7 @@ header.navbar {
 //HISTORY
 #history {
   img {
-    max-width: 640px;
+    max-width: 100%;
   }
 }
 
@@ -307,8 +307,68 @@ header.navbar {
   ul {
     text-align: left;
     list-style-type: square;
+    font-size: 1.2em;
   }
 }
+
+//CONTACT
+#contact {
+  .container form {
+    text-align: left;
+
+    label {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: .5em;
+      margin-top: .5em;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: .8em;
+      margin-bottom: 1em;
+      border-radius: .3em;
+      border: 1px solid gray;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: var(--accent-color);
+      color: var(--light-color);
+      font-weight: bold;
+      font-size: 1.3em;
+      border: none;
+      margin-bottom: 5em;
+      border-radius: 5em;
+      display: inline-block;
+      padding: .8em 2em;
+      width: unset;
+      cursor: pointer;
+    }
+  }
+}
+
+//SOCIALS
+#socials {
+  text-align: center;
+
+  .social {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .6em;
+    div {
+      margin: 0 auto;
+    }
+  }
+
+  img {
+    width: 6em;
+    height: auto;
+  }
+}
+
 
 // MEDIUM
 @media only screen and (min-width: 728px) {
@@ -401,6 +461,22 @@ header.navbar {
       margin-left: 8em;
     }
   }
+
+  //HISTORY
+  #history {
+    img {
+      max-width: 640px;
+    }
+  }
+
+  //SOCIALS
+  #socials {
+
+    .social{
+      //width: 500px;
+    }
+  }
+
 }
 
 //MEDIUM-LARGE
