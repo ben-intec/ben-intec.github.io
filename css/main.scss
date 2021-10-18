@@ -62,6 +62,7 @@ article {
   padding-top: 102px;
 }
 
+//HEADER
 header.navbar {
   background: var(--light-color);
   margin: 0;
@@ -139,7 +140,7 @@ header.navbar {
   }
 }
 
-//INTRO SECTION
+//INTRO
 #intro {
   text-align: center;
   margin-bottom: 3em;
@@ -185,7 +186,7 @@ header.navbar {
   }
 }
 
-//TOOLS SECTION
+//TOOLS
 #tools {
   text-align: center;
 
@@ -227,7 +228,7 @@ header.navbar {
   }
 }
 
-//LANGUAGE SECTION
+//LANGUAGE
 #languages {
   text-align: center;
   padding: 1.2em;
@@ -303,7 +304,6 @@ header.navbar {
 
 //GENERAL
 #general {
-
   ul {
     text-align: left;
     list-style-type: square;
@@ -373,7 +373,14 @@ header.navbar {
   }
 }
 
-
+//FOOTER
+#foot {
+  justify-content: center;
+  text-align: center;
+  div {
+    margin: .5em auto;
+  }
+}
 
 
 
@@ -416,6 +423,11 @@ header.navbar {
         &:hover {
           color: var(--accent-color);
           font-weight: 500;
+        }
+
+        &:active {
+
+          color: var(--accent-color);
         }
       }
 
