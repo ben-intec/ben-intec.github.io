@@ -304,7 +304,12 @@ header.navbar {
 
 //GENERAL
 #general {
+  div.general-container {
+    text-align: center;
+  }
+
   ul {
+    display: inline-block;
     text-align: left;
     list-style-type: square;
     font-size: 1.2em;
@@ -476,14 +481,6 @@ header.navbar {
     }
   }
 
-  //GENERAL
-  #general {
-
-    ul {
-      margin-left: 8em;
-    }
-  }
-
   //HISTORY
   #history {
     img {
@@ -564,14 +561,6 @@ header.navbar {
   //TOOLS SECTION
   #tools .tool-box {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  //GENERAL
-  #general {
-
-    ul {
-      margin-left: 16em;
-    }
   }
 
   //CONTACT
@@ -679,14 +668,11 @@ header.navbar {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  //GENERAL
-  #general {
-
-    ul {
-      margin-left: 24em;
-    }
-  }
 }
+
+
+
+
 
 
 //XX-LARGE
@@ -697,11 +683,4 @@ header.navbar {
     max-width: 1400px;
   }
 
-  //GENERAL
-  #general {
-
-    ul {
-      margin-left: 48em;
-    }
-  }
 }

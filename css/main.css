@@ -245,7 +245,11 @@ header.navbar .mobile-menu-exit {
   max-width: 100%;
 }
 
+#general div.general-container {
+  text-align: center;
+}
 #general ul {
+  display: inline-block;
   text-align: left;
   list-style-type: square;
   font-size: 1.2em;
@@ -375,10 +379,6 @@ header.navbar .mobile-menu-exit {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  #general ul {
-    margin-left: 8em;
-  }
-
   #history img {
     max-width: 640px;
   }
@@ -427,10 +427,6 @@ header.navbar .mobile-menu-exit {
 
   #tools .tool-box {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  #general ul {
-    margin-left: 16em;
   }
 
   #contact .container {
@@ -492,18 +488,10 @@ header.navbar .mobile-menu-exit {
   #tools .tool-box {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  #general ul {
-    margin-left: 24em;
-  }
 }
 @media only screen and (min-width: 1680px) {
   #intro .container {
     max-width: 1400px;
-  }
-
-  #general ul {
-    margin-left: 48em;
   }
 }
 
