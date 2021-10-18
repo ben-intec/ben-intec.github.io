@@ -285,15 +285,18 @@ header.navbar .mobile-menu-exit {
 
 #socials {
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
-#socials .social {
+#socials .container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.6em;
+  grid-gap: 1.6em;
 }
-#socials .social div {
+#socials .container div {
   margin: 0 auto;
+  max-width: 100px;
 }
 #socials img {
   width: 6em;
@@ -368,6 +371,22 @@ header.navbar .mobile-menu-exit {
   #history img {
     max-width: 640px;
   }
+
+  .info-input {
+    display: flex;
+  }
+  .info-input div {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .info-input div input #name {
+    margin-right: 1.6em;
+  }
+
+  #socials {
+    justify-content: center;
+    display: flex;
+  }
 }
 @media only screen and (min-width: 960px) {
   header.navbar .logo-img {
@@ -401,6 +420,11 @@ header.navbar .mobile-menu-exit {
 
   #general ul {
     margin-left: 16em;
+  }
+
+  #contact .container {
+    max-width: 1000px;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 1080px) {

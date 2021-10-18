@@ -352,14 +352,18 @@ header.navbar {
 //SOCIALS
 #socials {
   text-align: center;
+  justify-content: center;
+  display: flex;
 
-  .social {
+  .container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: .6em;
+    grid-gap: 1.6em;
+
     div {
       margin: 0 auto;
+      max-width: 100px;
     }
   }
 
@@ -370,8 +374,14 @@ header.navbar {
 }
 
 
+
+
+
+
+
 // MEDIUM
 @media only screen and (min-width: 728px) {
+  //HEADER
   header.navbar {
     margin: 0;
 
@@ -469,15 +479,39 @@ header.navbar {
     }
   }
 
+  //CONTACT
+  .info-input {
+    display: flex;
+    div {
+      margin: 0 auto;
+      width: 50%;
+      input {
+        #name {
+          margin-right: 1.6em;
+        }
+      }
+    }
+  }
+
   //SOCIALS
   #socials {
-
+    justify-content: center;
+    display: flex;
+    //grid-template-columns: 1fr fit-content(30%);
     .social{
-      //width: 500px;
+
     }
   }
 
 }
+
+
+
+
+
+
+
+
 
 //MEDIUM-LARGE
 @media only screen and (min-width: 960px) {
@@ -527,7 +561,20 @@ header.navbar {
       margin-left: 16em;
     }
   }
+
+  //CONTACT
+  #contact .container {
+    max-width: 1000px;
+    margin: auto;
+  }
 }
+
+
+
+
+
+
+
 
 //LARGE
 @media only screen and (min-width: 1080px) {
@@ -579,9 +626,15 @@ header.navbar {
 
 }
 
+
+
+
+
+
 //X-LARGE
 @media only screen and (min-width: 1280px) {
 
+  //INTRO
   #intro {
 
     .image-col {
@@ -627,6 +680,7 @@ header.navbar {
 //XX-LARGE
 @media only screen and (min-width: 1680px) {
 
+  //INTRO
   #intro .container {
     max-width: 1400px;
   }
