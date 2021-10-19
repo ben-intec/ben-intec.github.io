@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap");
+:root {
+  --primary-color: #232425;
+  --secundary-color: #202122;
+  --accent-color: #e78d05;
+  --light-color: #eeeeee;
+  --light-color-fade: #eeeeee77;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, div, article, section, table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Montserrat", system-ui;
+  font-weight: 200;
+  font-size: 100%;
+  vertical-align: center;
+}
+
+a {
+  color: var(--light-color-fade);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: var(--primary-color);
+  color: white;
+  max-width: 100%;
+}
+
+article {
+  padding: 1.8em;
+  text-align: center;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+}
+#navigation li {
+  float: left;
+  margin-right: 0.8em;
+}
+#navigation li a {
+  color: white;
+  font-weight: bold;
+}
+#navigation li a:hover {
+  color: var(--accent-color);
+}
+
+.todo-container {
+  padding: 2em;
+}
+.todo-container fieldset {
+  margin-top: 4em;
+  padding: 1.4em;
+}
+.todo-container fieldset legend {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 2.1em;
+}
+.todo-container fieldset p {
+  font-family: "Inconsolata", system-ui;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+.todo-container button {
+  margin-left: 1em;
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 0.4em 0.8em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 1em;
+}
+.todo-container button:hover {
+  color: var(--accent-color);
+  background: white;
+}
+
+/*# sourceMappingURL=scripts.css.map */

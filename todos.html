@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todos</title>
+    <link rel="shortcut icon" type="image/png" href="images/ic_todos.png"/>
+    <script type="module" src="js/scripts-header.js"></script>
+    <link rel="stylesheet" href="css/scripts.css">
+</head>
+<body >
+<script-header></script-header>
+<div class="todo-container">
+    <label>Hit refresh to load all the todos</label>
+    <button id="fetch-todos"> refresh</button>
+
+        <div id="todos-output">
+
+        </div>
+</div>
+
+<script>
+    const btn_fetch_all_todos = document.getElementById('fetch-todos');
+    btn_fetch_all_todos.addEventListener('click', () => {
+        document.getElementById("todos-output").innerHTML = '<progress></progress>';
+
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(arr => {
+                let html_string = '';
+                for (let i = 0; i < arr.length; i++) {
+                    let todo = arr[i]
+                    html_string += '<fieldset>' +
+                        '<legend>TODO ' + todo.id + '</legend>' +
+                        '<p>' +
+                        '    "userId": ' + todo.userId + '<br>' +
+                        '    "id": ' + todo.id + '<br>' +
+                        '    "title": ' + todo.title + '<br>' +
+                        '    "completed": ' + todo.completed + '<br>' +
+                        '</p>' +
+                        '</fieldset>';
+                }
+                document.getElementById("todos-output").innerHTML = html_string;
+                return;
+            });
+
+    })
+
+
+</script>
+</body>
+</html>

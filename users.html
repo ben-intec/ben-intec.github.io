@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="shortcut icon" type="image/png" href="images/ic_users.png"/>
+    <script type="module" src="js/scripts-header.js"></script>
+    <link rel="stylesheet" href="css/scripts.css">
+</head>
+<body >
+<script-header></script-header>
+<div class="todo-container">
+    <label>Hit refresh to load all the Users</label>
+    <button id="fetch-users"> refresh</button>
+
+    <div id="users-output">
+
+    </div>
+</div>
+
+<script>
+    const btn_fetch_all_users = document.getElementById('fetch-users');
+    btn_fetch_all_users.addEventListener('click', () => {
+
+        document.getElementById("users-output").innerHTML = '<progress></progress>';
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(arr => {
+                let html_string = '';
+                for (let i = 0; i < arr.length; i++) {
+                    let user = arr[i]
+                    html_string += '<fieldset>' +
+                        '<legend>' + user.name + '</legend>' +
+                        '<p>' +
+                        '    "id": ' + user.id + '<br>' +
+                        '    "username": ' + user.username + '<br>' +
+                        '    "email": ' + user.email + '<br>' +
+                        '    "address": ' + user.address.street + '  ' + user.address.suite + ' ' + '<br>' +
+                        '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+                            user.address.zipcode + ' ' + user.address.city + ' ' + '<br>' +
+                        '    "phone": ' + user.phone + '<br>' +
+                        '    "website": ' + user.website + '<br>' +
+                        '    "company": ' + user.company.name + '<br>' +
+                        '</p>' +
+                        '</fieldset>';
+                }
+                document.getElementById("users-output").innerHTML = html_string;
+                return;
+            });
+
+    })
+
+</script>
+</body>
+</html>

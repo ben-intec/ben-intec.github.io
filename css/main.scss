@@ -383,7 +383,11 @@ header.navbar {
   justify-content: center;
   text-align: center;
   div {
-    margin: .5em auto;
+    margin: 5em auto .5em auto;
+  }
+
+  a {
+    color: white;
   }
 }
 
@@ -430,9 +434,8 @@ header.navbar {
           font-weight: 500;
         }
 
-        &:active {
-
-          color: var(--accent-color);
+        &:visited {
+          //color: var(--accent-color);
         }
       }
 
