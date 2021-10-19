@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bacdesmedt</title>
-    <meta property="og:title" content="bacdesmedt" />
-    <meta property="og:description" content="Java Dev looking for career opportunities" />
-    <meta property="og:url" content="https://bendesmedt.github.io/" />
-    <meta property="og:image" content="https://bendesmedt.github.io/images/logo.svg" />
-    <meta property="og:image:secure_url" content="https://bendesmedt.github.io/images/logo.svg" />
-    <meta property="og:image:type" content="image/svg+xml" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
+    <meta property="og:title" content="bacdesmedt"/>
+    <meta property="og:description" content="Java Dev looking for career opportunities"/>
+    <meta property="og:url" content="https://bendesmedt.github.io/"/>
+    <meta property="og:image" content="https://bendesmedt.github.io/images/logo.svg"/>
+    <meta property="og:image:secure_url" content="https://bendesmedt.github.io/images/logo.svg"/>
+    <meta property="og:image:type" content="image/svg+xml"/>
+    <meta property="og:image:width" content="400"/>
+    <meta property="og:image:height" content="400"/>
     <link rel="shortcut icon" type="image/png" href="images/logo.svg"/>
     <link rel="stylesheet" href="css/main.css">
 
@@ -189,10 +189,10 @@
 </article>
 
 <article id="general">
-        <header>
-            <h2>General info and personal curioso</h2>
-            <p>Some interesting and some useless information about yours truly</p>
-        </header>
+    <header>
+        <h2>General info and personal curioso</h2>
+        <p>Some interesting and some useless information about yours truly</p>
+    </header>
     <div class="general-container">
         <ul class="curioso">
             <li>Driver License B</li>
@@ -217,13 +217,14 @@
     <header>
         <h2>Contact me</h2>
         <p>I welcome interesting career opportunities and curious tidbits.
-            I am happy with my provider, and I am already made aware of the horny housewives in my neighbourhood.
+            I am happy with my provider, and I am already made aware of the hot singles in my neighbourhood.
         </p>
     </header>
     <div class="container">
-
-        <form action="https://formsubmit.co/bac.desmedt@gmail.com" method="POST" />
-<!--        <form action="mailto:bac.desmedt@gmail.com">-->
+<!--        <form>-->
+<!--            <form class="contact-form" action="contactform.php" method="post">-->
+                    <form action="https://formsubmit.co/bac.desmedt@gmail.com" method="POST" />
+            <!--        <form action="mailto:bac.desmedt@gmail.com">-->
             <div class="info-input">
                 <div><label for="name">Name</label>
                     <input type="text" id="name" name="name"></div>
@@ -233,8 +234,10 @@
 
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-            <input type="submit" class="send-message-action" value="Send message">
+            <div class="send">
+                <button id="send-btn" type="submit">Send Message</button>
+                <div id="status"></div>
+            </div>
         </form>
 
     </div>
@@ -245,7 +248,7 @@
     <h3>Find me on ...</h3>
     <div class="container">
         <div>
-            <a href=" www.linkedin.com/in/bacdesmedt">
+            <a href="www.linkedin.com/in/bacdesmedt">
                 <span class="label">
                     <img src="images/ic_linkedin.png" alt="LinkedIn">
                     <br>LinkedIn
@@ -279,4 +282,7 @@
     </div>
 </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="js/send-form.js"></script>
 </html>
