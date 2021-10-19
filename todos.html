@@ -7,15 +7,16 @@
     <script type="module" src="js/scripts-header.js"></script>
     <link rel="stylesheet" href="css/scripts.css">
 </head>
-<body >
+<body>
 <script-header></script-header>
-<div class="todo-container">
+<button onclick="topFunction()" id="fab_top" title="Go to top">Top</button>
+<div class="container">
     <label>Hit refresh to load all the todos</label>
     <button id="fetch-todos"> refresh</button>
 
-        <div id="todos-output">
+    <div id="todos-output">
 
-        </div>
+    </div>
 </div>
 
 <script>
@@ -44,8 +45,7 @@
             });
 
     })
-
-
 </script>
+<script src="js/fab-back-to-top.js"></script>
 </body>
 </html>
