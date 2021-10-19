@@ -273,18 +273,30 @@ header.navbar .mobile-menu-exit {
   box-sizing: border-box;
   font-size: 1em;
 }
-#contact .container form input[type=submit] {
+#contact .container form button {
   background-color: var(--accent-color);
   color: var(--light-color);
   font-weight: bold;
   font-size: 1.3em;
   border: none;
-  margin-bottom: 5em;
   border-radius: 5em;
   display: inline-block;
   padding: 0.8em 2em;
   width: unset;
   cursor: pointer;
+}
+#contact .container form button:hover {
+  background-color: var(--light-color);
+  color: var(--accent-color);
+}
+#contact .container form .send {
+  display: flex;
+}
+#contact .container form #status {
+  padding: 1.2em;
+  color: red;
+  font-weight: 500;
+  margin: 0;
 }
 
 #socials {

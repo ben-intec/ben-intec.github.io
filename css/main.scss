@@ -338,18 +338,33 @@ header.navbar {
       font-size: 1em;
     }
 
-    input[type="submit"] {
+    button {
       background-color: var(--accent-color);
       color: var(--light-color);
       font-weight: bold;
       font-size: 1.3em;
       border: none;
-      margin-bottom: 5em;
+      //margin-bottom: 5em;
       border-radius: 5em;
       display: inline-block;
       padding: .8em 2em;
       width: unset;
       cursor: pointer;
+      &:hover {
+        background-color: var(--light-color);
+        color: var(--accent-color);
+      }
+    }
+
+    .send {
+      display: flex;
+    }
+
+    #status {
+      padding: 1.2em;
+      color: red;
+      font-weight: 500;
+      margin: 0;
     }
   }
 }
