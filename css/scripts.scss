@@ -70,7 +70,7 @@ article {
   }
 }
 
-//TODO
+//TODO(S) & USERS
 .container {
   padding: 2em;
   label{
@@ -134,5 +134,28 @@ article {
   &:hover {
     color: var(--accent-color);
     background: white;
+  }
+}
+
+@media only screen and (max-width: 633px) {
+  .container {
+    padding: 1.2em;
+
+    label {
+      font-size: 1.1em;
+    }
+
+    fieldset {
+      padding: 1em;
+      legend {
+        font-size: 1.7em;
+      }
+
+      p {
+        font-family: "Inconsolata", system-ui;
+        font-size: 1.2em;
+        font-weight: 400;
+      }
+    }
   }
 }

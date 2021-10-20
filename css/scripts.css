@@ -122,4 +122,24 @@ article {
   background: white;
 }
 
+@media only screen and (max-width: 633px) {
+  .container {
+    padding: 1.2em;
+  }
+  .container label {
+    font-size: 1.1em;
+  }
+  .container fieldset {
+    padding: 1em;
+  }
+  .container fieldset legend {
+    font-size: 1.7em;
+  }
+  .container fieldset p {
+    font-family: "Inconsolata", system-ui;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
+
 /*# sourceMappingURL=scripts.css.map */
