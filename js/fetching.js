@@ -45,7 +45,6 @@ async function todosHandler(todos, targetId) {
     for (let i = 0; i < todos.length; i++) {
         let todo = todos[i];
         let user = users[todo.userId - 1];
-        console.log(user);
         html_string += htmlForTodoWithUser(todo, user);
     }
     document.getElementById(targetId).innerHTML = html_string;
