@@ -10,7 +10,11 @@
 <body >
 <script-header></script-header>
 <button onclick="topFunction()" id="fab_top" title="Go to top">Top</button>
+<!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
+<!--<lottie-player src="https://assets4.lottiefiles.com/temp/lf20_afZa9y.json"  background="#232425"  speed="0.1"    loop-->
+<!--               autoplay></lottie-player>-->
 <div class="container">
+
     <label>Hit refresh to load all the Users</label>
     <button id="fetch-users"> refresh</button>
 
@@ -19,38 +23,11 @@
     </div>
 </div>
 
+<script src="js/fetching.js"></script>
 <script>
     const btn_fetch_all_users = document.getElementById('fetch-users');
-    btn_fetch_all_users.addEventListener('click', () => {
+    btn_fetch_all_users.addEventListener('click', fetchUsers);
 
-        document.getElementById("users-output").innerHTML = '<progress></progress>';
-
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(response => response.json())
-            .then(arr => {
-                let html_string = '';
-                for (let i = 0; i < arr.length; i++) {
-                    let user = arr[i]
-                    html_string += '<fieldset>' +
-                        '<legend>' + user.name + '</legend>' +
-                        '<p>' +
-                        '    "id": ' + user.id + '<br>' +
-                        '    "username": ' + user.username + '<br>' +
-                        '    "email": ' + user.email + '<br>' +
-                        '    "address": ' + user.address.street + '  ' + user.address.suite + ' ' + '<br>' +
-                        '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
-                            user.address.zipcode + ' ' + user.address.city + ' ' + '<br>' +
-                        '    "phone": ' + user.phone + '<br>' +
-                        '    "website": ' + user.website + '<br>' +
-                        '    "company": ' + user.company.name + '<br>' +
-                        '</p>' +
-                        '</fieldset>';
-                }
-                document.getElementById("users-output").innerHTML = html_string;
-                return;
-            });
-
-    })
 
 </script>
 <script src="js/fab-back-to-top.js"></script>

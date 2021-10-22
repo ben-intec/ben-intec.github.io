@@ -10,41 +10,21 @@
 <body>
 <script-header></script-header>
 <button onclick="topFunction()" id="fab_top" title="Go to top">Top</button>
+<!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
+<!--<lottie-player src="https://assets4.lottiefiles.com/temp/lf20_afZa9y.json"  background="#232425"  speed="0.1"    loop-->
+<!--               autoplay></lottie-player>-->
 <div class="container">
     <label>Hit refresh to load all the todos</label>
     <button id="fetch-todos"> refresh</button>
 
-    <div id="todos-output">
+    <div id="todos-output"> </div>
 
-    </div>
+
 </div>
-
+<script src="js/fetching.js"></script>
 <script>
     const btn_fetch_all_todos = document.getElementById('fetch-todos');
-    btn_fetch_all_todos.addEventListener('click', () => {
-        document.getElementById("todos-output").innerHTML = '<progress></progress>';
-
-        fetch('https://jsonplaceholder.typicode.com/todos')
-            .then(response => response.json())
-            .then(arr => {
-                let html_string = '';
-                for (let i = 0; i < arr.length; i++) {
-                    let todo = arr[i]
-                    html_string += '<fieldset>' +
-                        '<legend>TODO ' + todo.id + '</legend>' +
-                        '<p>' +
-                        '    "userId": ' + todo.userId + '<br>' +
-                        '    "id": ' + todo.id + '<br>' +
-                        '    "title": ' + todo.title + '<br>' +
-                        '    "completed": ' + todo.completed + '<br>' +
-                        '</p>' +
-                        '</fieldset>';
-                }
-                document.getElementById("todos-output").innerHTML = html_string;
-                return;
-            });
-
-    })
+    btn_fetch_all_todos.addEventListener('click', fetchTodos);
 </script>
 <script src="js/fab-back-to-top.js"></script>
 </body>
