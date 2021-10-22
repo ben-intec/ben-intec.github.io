@@ -22,7 +22,10 @@
 
 </div>
 <script src="js/fetching.js"></script>
-<script src="js/scripts-listeners.js"></script>
+<script>
+    const btn_fetch_all_todos = document.getElementById('fetch-todos');
+    btn_fetch_all_todos.addEventListener('click', fetchTodos);
+</script>
 <script src="js/fab-back-to-top.js"></script>
 </body>
 </html>
